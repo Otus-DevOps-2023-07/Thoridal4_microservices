@@ -3,8 +3,8 @@ Thoridal4 microservices repository
 
 ## ДЗ №13
 
-- Создан docker host, 
-- Создан свой docker-image 
+- Создан docker host,
+- Создан свой docker-image
 - Запушен в docker-hub
 - Были проведены различные проверки из методички и вебирана
 

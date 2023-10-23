@@ -9,3 +9,4 @@ variables.pkrvars.hcl
 *.retry
 jdauphant.nginx
 vault.key
+list

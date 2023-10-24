@@ -1,0 +1,7 @@
+REPOSITORY                TAG       IMAGE ID       CREATED              SIZE
+valery/ubuntu-tmp-files   latest    855a92f794d6   About a minute ago   72.8MB
+nginx                     latest    bc649bab30d1   8 days ago           187MB
+ubuntu                    20.04     bf40b7bc7a11   2 weeks ago          72.8MB
+hello-world               latest    9c7a54a9a43c   5 months ago         13.3kB
+
+docker inspect images показывает информацию об образе, тогда как docker inspect container показывает информацию о контейнере со всеми надстройками.

@@ -10,3 +10,4 @@ variables.pkrvars.hcl
 jdauphant.nginx
 vault.key
 list
+.env

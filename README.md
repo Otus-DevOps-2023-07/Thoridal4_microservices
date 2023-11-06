@@ -1,16 +1,16 @@
 # Thoridal4_microservices
 Thoridal4 microservices repository
 
-## ДЗ №13
+## ДЗ №15
 
-- Создан docker host,
-- Создан свой docker-image
-- Запушен в docker-hub
-- Были проведены различные проверки из методички и вебирана
+- Протестированы докер-сети
+- Установлен docker-compose
+- Создан docker-compose файл по проекту
+- docker-compose параметризован
 
 ## Тесты
 
 ```
-docker run --name reddit -d -p 9292:9292 thoridal/otus-reddit:1.0
-
+docker-compose up -d
+docker ps -a
 ```

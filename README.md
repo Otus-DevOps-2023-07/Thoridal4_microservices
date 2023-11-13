@@ -1,16 +1,16 @@
 # Thoridal4_microservices
 Thoridal4 microservices repository
 
-## ДЗ №15
+## ДЗ №16
 
-- Протестированы докер-сети
-- Установлен docker-compose
-- Создан docker-compose файл по проекту
-- docker-compose параметризован
+- Установлен gitlab
+- Написан gitlab-ci
+- Добавлен gitlab-runner
+- Подготовлен репозиторий с кодом приложения reddit
+- Разделены окружения stage и prod, добавлены динамические окружения
 
 ## Тесты
 
 ```
-docker-compose up -d
-docker ps -a
+http://158.160.67.93/homework/example/-/pipelines
 ```

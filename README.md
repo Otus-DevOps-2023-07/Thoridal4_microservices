@@ -10,6 +10,6 @@ Thoridal4 microservices repository
 ## Тесты
 
 ```
-docker pull thoridal/(список образов: ui, post, comment, primetheus)
+docker pull thoridal/(список образов: ui, post, comment, prometheus)
 docker-compose up -d
 ```

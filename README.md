@@ -1,16 +1,15 @@
 # Thoridal4_microservices
 Thoridal4 microservices repository
 
-## ДЗ №16
+## ДЗ №17
 
-- Установлен gitlab
-- Написан gitlab-ci
-- Добавлен gitlab-runner
-- Подготовлен репозиторий с кодом приложения reddit
-- Разделены окружения stage и prod, добавлены динамические окружения
+- Создан Dockerfile для поднятия Prometheus
+- Сбилжены образы приложений и запушены на dockerhub
+- Сконфигурирован node_exporter, mongodb_exporter и blackbox_exporter
 
 ## Тесты
 
 ```
-http://158.160.67.93/homework/example/-/pipelines
+docker pull thoridal/(список образов: ui, post, comment, primetheus)
+docker-compose up -d
 ```

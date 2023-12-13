@@ -1,15 +1,20 @@
 # Thoridal4_microservices
 Thoridal4 microservices repository
 
-## ДЗ №17
+## ДЗ №18
 
-- Создан Dockerfile для поднятия Prometheus
-- Сбилжены образы приложений и запушены на dockerhub
-- Сконфигурирован node_exporter, mongodb_exporter и blackbox_exporter
+- Создан compose-файл для системы логирования ElasticSearch + Fluentd + Kibana
+- Созданы Dockerfile и конфигурации для Fluentd, выполнена сборка образа
+- Выполнен сбор структурированных и не структурированных логов
+- Написан grok-шаблон
+- Изучен просмотр логов в Kibana
+- Изучен просмотр трейсов в Zipkin
 
 ## Тесты
 
 ```
-docker pull thoridal/(список образов: ui, post, comment, prometheus)
-docker-compose up -d
+cd docker && docker-compose -f docker-compose-logging.yml up -d && docker-compose up -d
+http://158.160.85.108:9292 - puma
+http://158.160.85.108:5601 - Kibana
+http://158.160.85.108:9411 - Zipkin
 ```

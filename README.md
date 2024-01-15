@@ -1,20 +1,22 @@
 # Thoridal4_microservices
 Thoridal4 microservices repository
 
-## ДЗ №18
+## ДЗ №20
 
-- Создан compose-файл для системы логирования ElasticSearch + Fluentd + Kibana
-- Созданы Dockerfile и конфигурации для Fluentd, выполнена сборка образа
-- Выполнен сбор структурированных и не структурированных логов
-- Написан grok-шаблон
-- Изучен просмотр логов в Kibana
-- Изучен просмотр трейсов в Zipkin
+- Установлен minikube
+- Созданы манифесты деплойментов и сервисов
+- Сконфигурированы конфиги доступа к кластеру
+- Создан неймспейс dev
+- Создан k8s кластер и группа хостов в яндекс облаке
+- Приложение развёрнуто в облаке (скриншоты в папке kubernetes)
 
 ## Тесты
 
 ```
-cd docker && docker-compose -f docker-compose-logging.yml up -d && docker-compose up -d
-http://158.160.85.108:9292 - puma
-http://158.160.85.108:5601 - Kibana
-http://158.160.85.108:9411 - Zipkin
+minikube start
+kubectl get nodes
+kubectl apply -f ./kubernetes/reddit
+minikube dashboard
+kubectl apply -f ./kubernetes/reddit/dev-namespace.yml
+kubectl apply -f ./kubernetes/reddit/ -n dev
 ```

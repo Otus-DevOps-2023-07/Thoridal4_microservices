@@ -11,3 +11,5 @@ jdauphant.nginx
 vault.key
 list
 .env
+tls.crt
+tls.key

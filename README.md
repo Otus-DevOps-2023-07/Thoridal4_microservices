@@ -1,17 +1,8 @@
 # Thoridal4_microservices
 Thoridal4 microservices repository
 
-## ДЗ №21
+## ДЗ №22
 
-- Изучен kube-dns
-- Изучены балансировщики нагрузки
-- Установлен ingress controller
-- Создан TLS сертификат и использован ingress-secret
-- Применена сетевая политика
-- Создан том и запрос на его использование подом mongo
-
-## Тесты
-
-```
-kubectl apply -f ./kubernetes/reddit -n dev
-```
+- Работа с Helm
+- Развертывание Gitlab в Kubernetes
+- Запуск CI/CD конвейера в Kubernetes

@@ -1,0 +1,6 @@
+name: reddit
+description: OTUS sample reddit application
+maintainers:
+  - name: thoridal
+    email: x.sandro111@gmail.com
+version: 0.1.0
